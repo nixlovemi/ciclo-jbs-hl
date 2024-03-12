@@ -1,0 +1,157 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>{{ text.title_prefix }} | {% block title %}{% endblock %}</title>
+  <meta name="description" content="JBS Higiene & Limpeza">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="{% static 'img/favicon-16x16.png' %}" sizes="16x16">
+  <link rel="icon" type="image/png" href="{% static 'img/favicon-32x32.png' %}" sizes="32x32">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/fonts-v3.css' %}">
+  <link rel="stylesheet" href="{% static 'css/page-v4.css' %}">
+  {% block stylesheet %}{% endblock %}
+  <meta name="theme-color" content="#fafafa">
+  {% block meta %}{% endblock %}
+  <!-- OneTrust --
+  <script type="text/javascript" src="https://cdn.cookielaw.org/consent/02e6f386-807d-44b2-a867-2ea1530664eb/OtAutoBlock.js">
+  </script>
+  <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript"
+  charset="UTF-8" data-domain-script="02e6f386-807d-44b2-a867-2ea1530664eb" ></script>
+  <script type="text/javascript">
+  function OptanonWrapper() { }
+  </script>
+  <!-- End OneTrust -->
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MG3RJXT');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+  <!-- header -->
+  <div class="header-area">
+    <header class="navbar container" id="navbar" role="banner">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="navbar-collapse" class="navbar-collapse collapse">
+        <div class="region region-navigation-collapsible">
+          <div class="logo-box">
+            <img src="{% static 'img/logo.png'%}" alt="JBS Higiene e Limpeza" />
+          </div>
+          <nav role="navigation" id="block-main-menu">
+            <ul class="menu nav navbar-nav">
+              <li class="expanded dropdown visible-lt-767">
+                <span>
+                  &nbsp;&nbsp;&nbsp;
+                  <a href="{{ text.menu_links.pt }}"><img src="{% static 'img/flag-pt.png' %}" width="24px"></a>
+                  &nbsp;&nbsp;
+                  <a href="{{ text.menu_links.en }}"><img src="{% static 'img/flag-en.png' %}" width="24px"></a>
+                  &nbsp;&nbsp;
+                  <a href="{{ text.menu_links.es }}"><img src="{% static 'img/flag-es.png' %}" width="24px"></a>
+                  <br />
+                  <br />
+                </span>
+              </li>
+              <li class="expanded dropdown">
+                <a href="{{ text.menu_links.home }}">{{ text.menu_labels.home }}</a>
+              </li>
+              <li class="expanded dropdown">
+                <a href="{{ text.menu_links.our_history }}">{{ text.menu_labels.our_history }}</a>
+              </li>
+              <li class="expanded dropdown">
+                <a href="{{ text.menu_links.our_business }}">{{ text.menu_labels.our_business }}</a>
+              </li>
+              <li class="expanded dropdown">
+                <a href="{{ text.menu_links.sustainability }}">{{ text.menu_labels.sustainability }}</a>
+              </li>
+              <li class="expanded dropdown">
+                <a href="{{ text.menu_links.contact }}">{{ text.menu_labels.contact }}</a>
+              </li>
+              <li class="expanded dropdown visible-gt-767">
+                <a href="{{ text.menu_links.pt }}" class="flag-br"><img src="{% static 'img/flag-pt.png' %}"></a>
+              </li>
+              <li class="expanded dropdown visible-gt-767">
+                <a href="{{ text.menu_links.en }}" class="flag-en"><img src="{% static 'img/flag-en.png' %}"></a>
+              </li>
+              <li class="expanded dropdown visible-gt-767">
+                <a href="{{ text.menu_links.es }}" class="flag-es"><img src="{% static 'img/flag-es.png' %}"></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="body-area">
+    {% block content %}{% endblock %}
+    <!-- footer -->
+    <div class="footer-section">
+      <div class="container">
+        <div class="footer-col-logo col-md-4 col-sm-12 visible-gt-991">
+          <div class="footer-logo">
+            <div class="footer-logo-msg">
+              <strong>{{ text.business_unit }}:</strong>
+            </div>
+            <img src="{% static 'img/jbs.png' %}" width="120px" height="50px" alt="">
+          </div>
+        </div>
+        <div class="footer-col-menu col-md-4 col-sm-12">
+          <div class="footer-menu"><a href="{{ text.menu_links.home }}">{{ text.menu_labels.home }}</a></div>
+          <div class="footer-menu"><a href="{{ text.menu_links.our_history }}">{{ text.menu_labels.our_history }}</a></div>
+          <div class="footer-menu"><a href="{{ text.menu_links.our_business }}">{{ text.menu_labels.our_business }}</a></div>
+          <div class="footer-menu"><a href="{{ text.menu_links.sustainability }}">{{ text.menu_labels.sustainability }}</a></div>
+          <div class="footer-menu"><a href="{{ text.menu_links.contact }}">{{ text.menu_labels.contact }}</a></div>
+          <div class="footer-menu"><a class="ot-sdk-show-settings footer-menu" style="cursor: pointer;">{{ text.menu_labels.cookies }}</a></div>
+        </div>
+        <div class="footer-col-social col-md-4 col-sm-12">
+          <div class="footer-social-where">{{ text.where_we_are }}</div> </strong>
+          <br />
+          {{ text.address | safe }}
+          <br />  <br />
+          +55 14 3533-2452 <br />
+          <a href="mailto:comercial.hl@jbs.com.br">comercial.hl@jbs.com.br</a> <br />
+          <a href="https://www.linkedin.com/company/jbs-higiene-e-limpeza/" target="_blank" rel="noopener"><img src="{% static 'img/contato/linkedin.png' %}" width="20px" alt="JBS H&L Linkedin"></a>
+        </div>
+
+        <div class="footer-col-unidade col-sm-12 visible-lt-767">
+          <strong>{{ text.business_unit }}:</strong>
+          <br />
+          <img src="{% static 'img/jbs.png' %}" width="80px">
+        </div>
+
+        <div class="copyright-separator col-md-12 col-sm-12">
+        </div>
+        <div class="copyright col-md-12 col-sm-12">
+          <p>
+            &copy; {{ text.copyright }} | <a href="{{ text.menu_links.privacy }}" target="_blank" rel="noopener">{{ text.menu_labels.privacy }}</a>
+            <br /> <br />
+            <a href="http://www.ciclocomunicacao.com.br/" target="_blank" rel="noopener"><img src="{% static 'img/ciclo-v2.png' %}" width="40px" alt="Visitar site da Agência Ciclo"></a>
+            <br /> <br />
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <script>
+    $('.navbar-nav>li>a').on('click', function(){
+      $('.navbar-collapse').collapse('hide');
+    });
+  </script>
+  {% block script %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,543 @@
+{% extends "page.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{% static 'css/home-v13.css' %}">
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'fslightbox/fslightbox.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+<div class="banner-section banner-size">
+  <div id="carousel-banner" class="banner-content carousel slide banner-size" data-ride="carousel">
+    <div class="carousel-indicators banner-indicators visible-gt-767">
+      <img src="{% static 'img/left.png'%}" width="18px" height="32px" data-target="#carousel-banner" data-slide="prev" class="arrow arrow-left">
+      <img src="{% static 'img/right.png'%}" width="18px" height="32px" data-target="#carousel-banner" data-slide="next" class="arrow arrow-right">
+    </div>
+    <div class="carousel-inner banner-size">
+      <div class="item active banner-size">
+        <div class="banner1-bg banner-size">
+          <div class="banner1-mobile visible-lt-767">
+          </div>
+          <div class="container">
+            <div class="banner-texts">
+              <div class="banner-title banner-title-home banner-title-home1">
+                <strong>JBS HIGIENE Y LIMPIEZA</strong> <br class="visible-gt-767" />
+                SE ESPECIALIZA EN LA <br class="visible-gt-767" />
+                PRODUCCIÓN DE <br class="visible-gt-767" />
+                <strong>JABONES DE TOCADOR,<br class="visible-gt-767" />
+                JABONES BARRA, MASA <br class="visible-gt-767" />
+                BASE Y GLICERINA.</strong>
+              </div>
+              <div class="banner-sub-title">
+                Con modernas instalaciones y 11 líneas de producción
+                robotizadas, poseemos una <strong>capacidad de producción</strong>
+                <strong>superior a 190 mil toneladas </strong> por año y atendemos a todas
+                as necesidades de nuestros clientes en los más variados formatos de
+                embalajes como <strong>flow pacĸ, folding boxes, wrapping paper, ĸits, entre otros.</strong>
+              </div>
+              <div class="banner-button-line" onclick="location.href='{{ text.menu_links.our_business }}';" style="cursor: pointer;">
+                <div class="banner-button">
+                  Sepa más
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item banner-size">
+        <div class="banner2-bg banner-size">
+          <div class="banner2-mobile visible-lt-767">
+          </div>
+          <div class="container">
+            <div class="banner-texts-right">
+              <div class="banner-title banner-title-right banner-title-home">
+                 MATERIA PRIMA <br class="visible-gt-767" />
+                <strong>rastreada y</strong> <br class="visible-gt-767" />
+                <strong>CERTIFICADA</strong>
+              </div>
+              <div class="banner-sub-title-right">
+                Basada en las mejores prácticas de sustentabilidad, la
+                materia prima de <strong>JBS Higiene y Limpieza</strong> está rastreada
+                y certificada por los órganos competentes.
+              </div>
+              <div class="banner-clear">
+              </div>
+              <div class="banner-button-line-right" onclick="location.href='{{ text.menu_links.our_history }}';" style="cursor: pointer;">
+                <div class="banner-button">
+                    Sepa más
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item banner-size">
+        <div class="banner3-bg banner-size">
+          <div class="banner3-video-container visible-gt-767">
+            <video id="banner3-video" autoplay muted loop poster="{% static 'video/poster3-v1.png'%}" style="width:100%; height:100%">
+              <source id="mp4" src="{% static 'video/banner3-v2.mp4'%}" type="video/mp4">
+            </video>
+          </div>
+          <div class="banner3-container" style="width: 100%">
+            <div class="banner3-mobile visible-lt-767">
+              <video id="banner3-mobile-video" autoplay muted loop poster="{% static 'video/poster3-mobile.png'%}" style="width:100%;">
+                <source id="mp4" src="{% static 'video/tecnologia-v2.mp4'%}" type="video/mp4">
+              </video>
+            </div>
+            <div class="container">
+              <div class="banner-texts">
+                <div class="banner-title banner-title-home">
+                  <br class="visible-gt-767" />
+                  <br class="visible-gt-767" />
+                   MODERNAS <br class="visible-gt-767" />
+                   INSTALACIONES <br class="visible-gt-767" />
+                  con <strong>TECNOLOGÍA</strong> <br class="visible-gt-767" />
+                  <strong>de PUNTA</strong>
+                </div>
+                <div class="banner-sub-title">
+                  JBS Higiene y Limpieza a través da su tecnología de punta, posee la capacidad de producción para la atención de pequeños, medianos y grandes volúmenes.
+                </div>
+                <div class="banner-button-line" onclick="location.href='{{ text.menu_links.our_history }}';" style="cursor: pointer;">
+                  <div class="banner-button">
+                    Sepa más
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="icon-section">
+  <div class="container">
+    <div class="row icon-row">
+      <div class="icon-col col-sm-12 col-md-4">
+        <div class="icon-img">
+          <img src="{% static 'img/home/icon1.png'%}">
+        </div>
+        <div class="icon-title">
+          LA PRINCIPAL <br class="visible-gt-767" />
+          PRODUCTORA B2B
+        </div>
+        <div class="icon-text">
+          Especializada en la fabricación de <br class="visible-gt-767" />
+          jabones y jabones barra <br class="visible-gt-767" />
+          para el segmento B2B.
+        </div>
+      </div>
+      <div class="icon-col col-sm-12 col-md-4">
+        <div class="icon-img">
+          <img src="{% static 'img/home/icon2.png'%}">
+        </div>
+        <div class="icon-title">
+          LÍNEAS DE PRODUCCIÓN<br class="visible-gt-767" />
+          ROBOTIZADAS
+        </div>
+        <div class="icon-text">
+          Automación industrial <br class="visible-gt-767" />
+          y mejora de procesos <br class="visible-gt-767" />
+          con alta tecnología.
+        </div>
+      </div>
+      <div class="icon-col col-sm-12 col-md-4">
+        <div class="icon-img">
+          <img src="{% static 'img/home/icon3.png'%}">
+        </div>
+        <div class="icon-title">
+          ALTA CAPACIDAD <br class="visible-gt-767" />
+          DE PRODUCCIÓN
+        </div>
+        <div class="icon-text">
+          Capacidad de producción <br class="visible-gt-767" />
+          superior a mil millones de <br class="visible-gt-767" />
+          sjabones por año.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bigtitle-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+      </div>
+      <div class="col-sm-12 col-md-6 bigtitle-title-col">
+        <div class="bigtitle-title">
+          Nuestra <strong>Historia</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="imagetext-section">
+  <div class="container">
+    <div class="row imagetext-row">
+      <div class="col-sm-12 col-md-6 imagetext-image-col">
+        <div class="historia-col">
+          <img src="{% static 'img/home/historia-v2.png'%}">
+        </div>
+      </div>
+      <div class="imagetext-text-col col-sm-12 col-md-6">
+        <div class="imagetext-text">
+          JBS Higiene y Limpieza pertenece al Grupo JBS S/A que se creó en la década de 1950 y se ha convertido en la segunda mayor compañía de alimentos del mundo y líder de la producción de proteína animal.
+        </div>
+        <div class="imagetext-text">
+          Nuestro grupo cuenta con más de 245 mil colaboradores en unidades de producción y oficinas presentes en más de 150 países.
+        </div>
+        <div class="button-line">
+          <div class="button">
+            <a href="{{ text.menu_links.our_history }}">
+              Sepa más
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="textimage-section">
+  <div class="container">
+    <div class="row textimage-row">
+      <div class="textimage-text-col textimage-negocio-col col-sm-12 col-md-6">
+        <div class="textimage-title">
+          Conozca <strong>Nuestro Negocio</strong>
+        </div>
+        <div class="textimage-text">
+          Como parte de un grupo que posee una cadena de producción generadora de grasa animal, JBS Higiene y Limpieza tiene suministro a gran escala y calidad, debido a un modelo de trazabilidad que permite identificar de cuál hacienda viene cada materia prima. Eso asegura que el aceite animal utilizado en nuestro proceso de producción esté bajo todas las normas de sustentabilidad.
+        </div>
+        <div class="button-line">
+          <div class="button">
+            <a href="{{ text.menu_links.our_business }}">
+              Sepa más
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="negocio-image-col">
+          <img src="{% static 'img/home/negocio.png'%}">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bigtitle-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+      </div>
+      <div class="col-sm-12 col-md-6 bigtitle-title-col">
+        <div class="bigtitle-title">
+          Nuestros <strong>Productos</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="produto-section">
+  <div class="container">
+    <div class="row produto-row">
+      <div class="produto-col col-sm-12 col-md-3">
+        <div class="produto-img">
+          <img src="{% static 'img/home/produto1.png'%}">
+        </div>
+        <div class="produto-text">
+          Masa Base<br class="visible-gt-767" />
+          &nbsp;
+        </div>
+        <div class="produto-link-line">
+          <div class="produto-link">
+            <a href="{{ text.menu_links.our_business}}">
+              Sepa más
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="produto-col col-sm-12 col-md-3">
+        <div class="produto-img">
+          <img src="{% static 'img/home/produto2.png'%}">
+        </div>
+        <div class="produto-text">
+          Glicerina <br class="visible-gt-767" />
+          Bidestilada
+        </div>
+        <div class="produto-link-line">
+          <div class="produto-link">
+            <a href="{{ text.menu_links.our_business }}">
+              Sepa más
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="produto-col col-sm-12 col-md-3">
+        <div class="produto-img">
+          <img src="{% static 'img/home/produto3.png'%}">
+        </div>
+        <div class="produto-text">
+          Jabón <br class="visible-gt-767" />
+          de tocador
+        </div>
+        <div class="produto-link-line">
+          <div class="produto-link">
+            <a href="{{ text.menu_links.our_business }}">
+              Sepa más
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="produto-col col-sm-12 col-md-3">
+        <div class="produto-img">
+          <img src="{% static 'img/home/produto4.png'%}">
+        </div>
+        <div class="produto-text">
+          Jabón barra <br class="visible-gt-767" />
+          &nbsp;
+        </div>
+        <div class="produto-link-line">
+          <div class="produto-link">
+            <a href="{{ text.menu_links.our_business }}">
+              Sepa más
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bigtitle-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+      </div>
+      <div class="col-sm-12 col-md-6 bigtitle-title-col">
+        <div class="bigtitle-title">
+          Nuestros <strong>Diferenciales</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="imagebox-section">
+  <div class="container">
+    <div class="row imagebox-row">
+      <div class="col-sm-12 col-md-6">
+        <div class="materia-prima-image">
+          <img src="{% static 'img/home/materia-prima.png'%}">
+        </div>
+      </div>
+      <div class="imagebox-text-col col-sm-12 col-md-6">
+        <div class="imagebox-box materia-prima-box">
+          <div class="imagebox-title">
+            MATERIA PRIMA RASTREADA Y CERTIFICADA <br class="visible-gt-767" />
+            ASEGURA LAS MEJORES PRÁCTICAS SUSTENTABLES.
+          </div>
+          <div class="imagebox-text">
+            La trazabilidad confirma la disponibilidad y la seguridad de utilizar un aceite animal que esté bajo todas las reglas de sustentabilidad
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="boximage-section">
+  <div class="container">
+    <div class="row boximage-row visible-gt-767">
+      <div class="boximage-text-col col-sm-12 col-md-6">
+        <div class="boximage-box laboratorio-box">
+          <div class="boximage-title">
+            LABORATORIO DE CONTROL DE <br class="visible-gt-767" />
+            CALIDAD FÍSICO-QUÍMICA Y MICROBIOLÓGICO
+          </div>
+          <div class="boximage-text">
+            <strong>Contamos con:</strong>
+            <ul>
+              <li>Análisis de recepción de materia prima, proceso y producto terminado;</li>
+              <li>Prestación de servicios para análisis externas;</li>
+              <li>Estandarización de recolección, entrenamientos técnicos y auditorías de procesos.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="laboratorio-image">
+          <img src="{% static 'img/home/laboratorio.png'%}">
+        </div>
+      </div>
+    </div>
+    <div class="row boximage-row visible-lt-767">
+      <div class="col-sm-12 col-md-6">
+        <div class="laboratorio-image">
+          <img src="{% static 'img/home/laboratorio.png'%}">
+        </div>
+      </div>
+      <div class="boximage-text-col col-sm-12 col-md-6">
+        <div class="boximage-box laboratorio-box">
+          <div class="boximage-title">
+            LABORATORIO DE CONTROL DE <br class="visible-gt-767" />
+            CALIDAD FÍSICO-QUÍMICA Y MICROBIOLÓGICO
+          </div>
+          <div class="boximage-text">
+            <strong>Contamos con:</strong>
+            <ul>
+              <li>Análisis de recepción de materia prima, proceso y producto terminado;</li>
+              <li>Prestación de servicios para análisis externas;</li>
+              <li>Estandarización de recolección, entrenamientos técnicos y auditorías de procesos.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="imagebox-section">
+  <div class="container">
+    <div class="row imagebox-row">
+      <div class="col-sm-12 col-md-6">
+        <div class="linhas-producao-image">
+          <a data-fslightbox="gallery2"
+            href="{% static 'video/tecnologia-v2.mp4'%}">
+            <img src="{% static 'img/home/linhas-producao-v2.png'%}">
+          </a>
+        </div>
+      </div>
+      <div class="imagebox-text-col col-sm-12 col-md-6">
+        <div class="imagebox-box linhas-producao-box">
+          <div class="imagebox-title">
+            LÍNEAS DE PRODUCCIÓN ROBOTIZADAS <br class="visible-gt-767" />
+            CON TECNOLOGÍA DE ALTO RENDIMIENTO
+          </div>
+          <div class="imagebox-text">
+            Las 11 líneas de producción de jabones de tocador son robotizadas y programadas para que produzcan distintos tipos de embalajes, tales como: flow pacĸ, folding boxes y wrapping paper.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="boximage-section">
+  <div class="container">
+    <div class="row boximage-row visible-gt-767">
+      <div class="boximage-text-col col-sm-12 col-md-6">
+        <div class="boximage-box monitoramento-box">
+          <div class="boximage-title">
+            SISTEMA DE GESTIÓN Y MONITOREO <br class="visible-gt-767" />
+            CON GARANTIA DE CALIDAD
+          </div>
+          <div class="boximage-text">
+            Con modernos sistemas de seguridad, todo jabón de tocador producido pasa por un proceso estricto de control de calidad, asegurando todas las especificaciones y bajo todas las exigencias de los órganos reguladores y auditorías de los clientes.
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="monitoramento-image">
+          <img src="{% static 'img/home/monitoramento.png'%}">
+        </div>
+      </div>
+    </div>
+    <div class="row boximage-row visible-lt-767">
+      <div class="col-sm-12 col-md-6">
+        <div class="monitoramento-image">
+          <img src="{% static 'img/home/monitoramento.png'%}">
+        </div>
+      </div>
+      <div class="boximage-text-col col-sm-12 col-md-6">
+        <div class="boximage-box monitoramento-box">
+          <div class="boximage-title">
+            SISTEMA DE GESTIÓN Y MONITOREO <br class="visible-gt-767" />
+            CON GARANTIA DE CALIDAD
+          </div>
+          <div class="boximage-text">
+            Con modernos sistemas de seguridad, todo jabón de tocador producido pasa por un proceso estricto de control de calidad, asegurando todas las especificaciones y bajo todas las exigencias de los órganos reguladores y auditorías de los clientes.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="imagebox-section">
+  <div class="container">
+    <div class="row imagebox-row">
+      <div class="col-sm-12 col-md-6">
+        <div class="importamos-image">
+          <img src="{% static 'img/home/importamos.png'%}">
+        </div>
+      </div>
+      <div class="imagebox-text-col col-sm-12 col-md-6">
+        <div class="imagebox-box importamos-box">
+          <div class="imagebox-title">
+            IMPORTAMOS UNA GRAN CANTIDAD <br class="visible-gt-767" />
+            DE ACEITE VEGETAL
+          </div>
+          <div class="imagebox-text">
+            Esa práctica asegura una estabilidad de abastecimiento del mercado brasileño, un beneficio que es revertido a nuestros clientes.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="boximage-section">
+  <div class="container">
+    <div class="row boximage-row visible-gt-767">
+      <div class="boximage-text-col col-sm-12 col-md-6">
+        <div class="boximage-box certificacoes-box">
+          <div class="boximage-title boximage-title-certificacoes">
+            CERTIFICACIONES <br />
+          </div>
+          <div class="boximage-text">
+            <div class="certificacoes-selos-image">
+              <img src="{% static 'img/home/certificacoes-selos-es-v2.png'%}">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="certificacoes-image">
+          <img src="{% static 'img/home/certificacoes.png'%}">
+        </div>
+      </div>
+    </div>
+    <div class="row boximage-row visible-lt-767">
+      <div class="col-sm-12 col-md-6">
+        <div class="certificacoes-image">
+          <img src="{% static 'img/home/certificacoes.png'%}">
+        </div>
+      </div>
+      <div class="boximage-text-col col-sm-12 col-md-6">
+        <div class="boximage-box certificacoes-box">
+          <div class="boximage-title boximage-title-certificacoes">
+            CERTIFICACIONES <br />
+          </div>
+          <div class="boximage-text">
+            <div class="certificacoes-selos-image">
+              <img src="{% static 'img/home/certificacoes-selos-es-v2.png'%}">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

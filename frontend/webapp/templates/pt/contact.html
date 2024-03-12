@@ -1,0 +1,116 @@
+{% extends "page.html" %}
+{% load static %}
+
+{% block title %}Contato{% endblock %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{% static 'css/contato-v4.css' %}">
+{% endblock %}
+
+{% block script %}
+<script>
+var CONTACT_SUCCESS = "Mensagem enviada com sucesso!";
+var CONTACT_ERROR = "Erro ao enviar mensagem. Tente novamente mais tarde!";
+var CONTACT_SEND = "Enviar Mensagem";
+var CONTACT_SENDING = "Enviando...";
+
+var CONTACT_MISSING_NAME = "O campo Nome precisa ser preenchido.";
+var CONTACT_MISSING_EMAIL = "O campo E-mail precisa ser preenchido.";
+var CONTACT_INVALID_EMAIL = "E-mail precisa ser preenchido corretamente.";
+var CONTACT_MISSING_PHONE = "O campo Telefone precisa ser preenchido.";
+var CONTACT_MISSING_MESSAGE = "O campo Mensagem precisa ser preenchido.";
+var CONTACT_MISSING_PRIVACY = "Você precisa aceitar os termos da Política de Privacidade para poder enviar essa mensagem.";
+</script>
+<script src="{% static 'js/contact-v1.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+<div class="banner-section">
+  <div class="banner-content">
+    <div class="container">
+      <div class="banner-title">
+        <strong>Contato</strong>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- contact -->
+<div class="contact-section">
+  <div class="container">
+    <div class="row">
+      <div class="contact-form col-md-6 col-sm-6 col-xs-12">
+        <input type="text" id="name_field" name="name_field" placeholder="NOME COMPLETO"></input> <br />
+        <input type="text" id="email_field" name="email_field" placeholder="EMAIL"></input> <br />
+        <input type="text" id="phone_field" name="phone_field" placeholder="TELEFONE"></input> <br />
+        <textarea rows="9" id="message_field" name="message_field" placeholder="MENSAGEM - Não informar dados pessoais neste campo"></textarea>  <br />
+        <input type="checkbox" id="privacidade_check" name="privacidade_check" class="contact-form-checkbox">
+        </input>
+        <span class="contact-form-checkbox-text">Li e aceito a <a href="{{ text.menu_links.privacy }}" class="contact-form-link" target="_blank" rel="noopener">Pol&iacute;tica de Privacidade</a> da JBS H<span class="eespecial">&</span>L</span>
+        <br/>
+        <div class="contact-send-line">
+          <div class="contact-send" id="contact-send" style="cursor: pointer;">
+            Enviar
+          </div>
+        </div>
+      </div>
+      <div class="contact-text col-md-6 col-sm-6 col-xs-12">
+        <div class="contact-detail">
+          Para mais informações <br >
+          entre em contato:
+        </div>
+        <div class="contact-phone">
+          +55 14 <span class="contact-phone-big">3533-2452</span>
+        </div>
+        <div class="contact-email">
+          comercial.hl@jbs.com.br
+        </div>
+        <div class="contact-address">
+          Rodovia BR 153 KM 179 s/n <br />
+          Zona Rural | Lins/SP | CEP: 16400-900
+        </div>
+        <div class="contact-siga">
+          Siga a JBS H<span class="eespecial">&</span>L no Linĸedin e <br/>
+          acompanhe as novidades. <a href="https://www.linkedin.com/company/jbs-higiene-e-limpeza/" target="_blank" rel="noopener"><img src="{% static 'img/contato/linkedin.png' %}" width="20px" alt="JBS H&L Linkedin"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bigtitle-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+      </div>
+      <div class="col-sm-12 col-md-6 bigtitle-title-col">
+        <div class="bigtitle-title">
+          Faça parte <br class="visible-lt-767" />
+          <strong>do time JBS</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="imagetext-section">
+  <div class="container">
+    <div class="row imagetext-row">
+      <div class="imagetext-image-col col-sm-12 col-md-6">
+        <div class="trabalhador-col">
+          <img src="{% static 'img/contato/trabalhadora.png'%}">
+        </div>
+      </div>
+      <div class="imagetext-text-col col-sm-12 col-md-6">
+        <div class="imagetext-text">
+          Envie seu currículo para o email: <br />
+          <a href="mailto:recrutamentobht@jbs.com.br" target="_blank" rel="noopener"><strong>recrutamentobht@jbs.com.br</strong></a>
+          e quando surgir novas oportunidades entraremos em contato com você!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'Mangueira';
+  src: url('fonts/Mangueira-Bold.woff2') format('woff2'),
+      url('fonts/Mangueira-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mangueira';
+  src: url('fonts/Mangueira-Black.woff2') format('woff2'),
+      url('fonts/Mangueira-Black.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mangueira';
+  src: url('fonts/Mangueira-ExtraLight.woff2') format('woff2'),
+      url('fonts/Mangueira-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mangueira';
+  src: url('fonts/Mangueira-Regular.woff2') format('woff2'),
+      url('fonts/Mangueira-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mangueira';
+  src: url('fonts/Mangueira-SemiBold.woff2') format('woff2'),
+      url('fonts/Mangueira-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mangueira';
+  src: url('fonts/Mangueira-Medium.woff2') format('woff2'),
+      url('fonts/Mangueira-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mangueira';
+  src: url('fonts/Mangueira-Heavy.woff2') format('woff2'),
+      url('fonts/Mangueira-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mangueira';
+  src: url('fonts/Mangueira-Light.woff2') format('woff2'),
+      url('fonts/Mangueira-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mangueira';
+  src: url('fonts/Mangueira-Thin.woff2') format('woff2'),
+      url('fonts/Mangueira-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('fonts/Gotham-Light.woff2') format('woff2'),
+      url('fonts/Gotham-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham Book';
+  src: url('fonts/Gotham-Book.woff2') format('woff2'),
+      url('fonts/Gotham-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('fonts/Gotham-Bold.woff2') format('woff2'),
+      url('fonts/Gotham-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+

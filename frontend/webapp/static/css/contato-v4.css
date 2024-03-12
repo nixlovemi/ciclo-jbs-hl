@@ -1,0 +1,251 @@
+/* banner */
+.banner-section {
+  background-image: url("../img/contato/banner.png");
+  background-size: 100%;
+  height: 18vw;
+}
+
+.banner-title {
+  font-size: 32px;
+  font-family: 'Mangueira';
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media (max-width: 1199px) {
+  .banner-section {
+    background-size: 125%;
+    height: 18vw;
+  }
+  .banner-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-section {
+    background-size: 125%;
+    height: 18vw;
+  }
+  .banner-title {
+    font-size: 20px;
+  }
+}
+
+
+/* contact */
+.contact-section {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.contact-form input {
+  line-height: 330%;
+}
+
+.contact-form textarea {
+  line-height: 175%;
+}
+
+.contact-form input,textarea {
+  border: 1px;
+  width: 95%;
+  color: #000000;
+  font-size: 12px;
+  font-family: 'Mangueira';
+  font-weight: 500;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #cff1f8;
+}
+
+.contact-form-checkbox {
+  width: auto !important;
+}
+
+.contact-form-checkbox-text {
+  color: #000000;
+  font-size: 15px;
+  font-family: 'Mangueira';
+  font-weight: 500;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+a:hover.contact-form-link,  a:visited.contact-form-link, a:link.contact-form-link, a:active.contact-form-link
+{
+  color: #000000;;
+  text-decoration: underline;
+}
+
+.contact-send-line {
+  width: 100%;
+  padding-top: 15px;
+  color: #71d0d9;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: 'Mangueira';
+  font-weight: 800;
+}
+
+.contact-send {
+  width: fit-content;
+  font-size: 13px;
+  border: 1px;
+  background-color: #002455;
+  border-color:#002455;
+  border-style: solid;
+  padding: 12px;
+}
+
+.contact-detail {
+  margin-left: -20px;
+  border-left: 8px solid #002455;
+  padding-left: 10px;
+  font-size: 28px;
+  color: #002455;
+  font-size: 16px;
+  font-family: 'Mangueira';
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.contact-phone {
+  padding-top: 30px;
+  color: #71d0d9;
+  font-size: 20px;
+  font-family: 'Mangueira';
+  font-weight: 200;
+}
+
+.contact-phone-big {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.contact-email {
+  padding-top: 20px;
+  font-size: 16px;
+  font-family: 'Mangueira';
+}
+
+.contact-address {
+  padding-top: 20px;
+  font-size: 16px;
+  font-family: 'Mangueira';
+}
+
+.contact-siga {
+  padding-top: 20px;
+  font-size: 16px;
+  font-family: 'Mangueira';
+}
+
+.contact-siga > a > img {
+  padding-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .contact-detail {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  .contact-form-checkbox-text {
+    font-size: 12px;
+  }
+}
+
+/* bigtitle */
+.bigtitle-section {
+  padding-top: 30px;
+}
+
+.bigtitle-title {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 75px;
+  text-transform: uppercase;
+  font-size: 30px;
+  background-color: #002455;
+  color: #71d0d9;
+  width: 100%;
+  border-left: 8px solid #71d0d9;
+}
+
+.bigtitle-title-col {
+  padding-left: 0px;
+}
+
+@media (max-width: 991px) {
+  .bigtitle-title-col {
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bigtitle-title {
+    font-size: 24px;
+  }
+  .bigtitle-title-col {
+    padding-right: 15px;
+  }
+}
+
+/* imagetext */
+.imagetext-section {
+  padding-bottom: 300px;
+}
+
+.imagetext-text-col {
+  padding-top: 30px;
+  padding-left: 83px;
+}
+
+.imagetext-text {
+  font-size: 15px;
+  width: 430px;
+  line-height: 170%;
+  padding-bottom: 20px;
+}
+
+.trabalhador-col {
+  left: 0px;
+  position: absolute;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: -8px;
+}
+
+.trabalhador-col > img {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .imagetext-section {
+    padding-bottom: 0px;
+  }
+  .trabalhador-col {
+    margin-right: 0px;
+  }
+  .imagetext-image-col {
+    margin-right: 15px;
+    padding-bottom: 64vw;
+  }
+  .imagetext-text-col {
+    padding-left: 15px;
+  }
+  .imagetext-text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .imagetext-image-col {
+    padding-bottom: 64vw;
+  }
+}
+

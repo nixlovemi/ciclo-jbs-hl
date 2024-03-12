@@ -1,0 +1,10 @@
+.DS_Store
+.vagrant
+*.log
+composer.lock
+node_modules
+__pycache__
+*.pyc
+.DS_Store
+frontend.log
+*.pyc

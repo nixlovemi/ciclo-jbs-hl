@@ -1,0 +1,114 @@
+{% extends "page.html" %}
+{% load static %}
+
+{% block title %}Nossa História{% endblock %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{% static 'css/historia-v1.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="banner-section">
+  <div class="banner-content">
+    <div class="container">
+      <div class="banner-title">
+        Nossa <strong>História</strong>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="photo-section">
+  <div class="container">
+    <div class="row">
+      <div class="photo-section-col col-md-12 col-sm-12 col-xs-12">
+        <div class="photo-section-image">
+          <img class="photo-section-img" src="{% static 'img/historia/photo-v2.png' %}" alt="Nossa História">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="highlight-section">
+  <div class="container">
+    <div class="row">
+      <div class="highlight-section-col col-md-12 col-sm-12 col-xs-12">
+        <div class="highlight-title">
+          Operando desde 1990, a <strong>JBS Higiene <span class="eespecial">&</span> Limpeza</strong>
+          é uma unidade de negócios do Grupo JBS S/A e atualmente é a principal produtora de
+          sabonetes, sabões em barra, massa base e glicerina do Brasil.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-section">
+  <div class="container">
+    <div class="row">
+      <div class="text-section-col col-md-12 col-sm-12 col-xs-12">
+        <div class="text-text">
+          Fundado na década de 50 no Brasil, o Grupo JBS S/A  é a segunda maior companhia de alimentos do mundo,
+          líder na produção de proteína animal que possui uma plataforma global diversificada por territórios e tipos
+          de produtos.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="icon-section">
+  <div class="container">
+    <div class="row icon-row">
+      <div class="icon-col col-sm-12 col-md-4">
+        <div class="icon-img">
+          <img src="{% static 'img/historia/icon1.png'%}">
+        </div>
+        <div class="icon-title">
+          Mais de 245 mil <br class="visible-gt-767" />
+          colaboradores
+        </div>
+      </div>
+      <div class="icon-col col-sm-12 col-md-4">
+        <div class="icon-img">
+          <img src="{% static 'img/historia/icon2.png'%}">
+        </div>
+        <div class="icon-title">
+          Presentes em<br class="visible-gt-767" />
+          mais de 150 países
+        </div>
+      </div>
+      <div class="icon-col col-sm-12 col-md-4">
+        <div class="icon-img">
+          <img src="{% static 'img/historia/icon3.png'%}">
+        </div>
+        <div class="icon-title">
+          Mais de 300 mil clientes <br class="visible-gt-767" />
+          ao redor do mundo
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-section text-section-end">
+  <div class="container">
+    <div class="row">
+      <div class="text-section-col col-md-12 col-sm-12 col-xs-12">
+        <div class="text-text">
+          Operando desde 1990, a JBS Higiene <span class="eespecial">&</span> Limpeza é uma unidade de negócios do grupo JBS
+          e atualmente é a principal produtora de sabonetes, sabões em barra,
+          massa base e glicerina do Brasil. Com produção superior a 1 bilhão de sabonetes
+          por ano, dispomos de um moderno e tecnológico parque fabril,
+          linhas robotizadas de última geração e um processo de produção altamente
+          qualificado que garante a rastreabilidade de matéria-prima até
+          o produto final.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
