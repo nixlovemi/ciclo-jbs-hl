@@ -21,7 +21,7 @@ def build_context(language="pt", **kwargs):
             "title_prefix": "JBS Higiene & Limpeza",
             "description": "A JBS HIGIENE & LIMPEZA É ESPECIALIZADA NA PRODUÇÃO DE SABONETES, SABÕES EM BARRA, MASSA BASE E GLICERINA.",
             "copyright": f"JBS {year} - Todos os direitos reservados",
-            "business_unit": "Uma unidade de negócios:",
+            "business_unit": "Uma unidade de negócios",
             "where_we_are": "Onde estamos",
             "address": "Rodovia BR 153 KM 179 s/n <br/>Zone Rural    |    Lins/SP    |    CEP: 16400-900",
             "menu_labels": {
