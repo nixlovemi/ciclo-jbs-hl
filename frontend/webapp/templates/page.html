@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>{{ text.title_prefix }} | {% block title %}{% endblock %}</title>
-  <meta name="description" content="JBS Higiene & Limpeza">
+  <meta name="description" content="H&B">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="{% static 'img/favicon-16x16.png' %}" sizes="16x16">
   <link rel="icon" type="image/png" href="{% static 'img/favicon-32x32.png' %}" sizes="32x32">
@@ -46,7 +46,7 @@
       <div id="navbar-collapse" class="navbar-collapse collapse">
         <div class="region region-navigation-collapsible">
           <div class="logo-box">
-            <img src="{% static 'img/logo.png'%}" alt="JBS Higiene e Limpeza" />
+            <img width="111" height="46" src="{% static 'img/logo.png'%}" alt="H&B" />
           </div>
           <nav role="navigation" id="block-main-menu">
             <ul class="menu nav navbar-nav">
@@ -150,6 +150,21 @@
   <script>
     $('.navbar-nav>li>a').on('click', function(){
       $('.navbar-collapse').collapse('hide');
+    });
+
+    $(document).ready(function() {
+        $('#modal-video-home').modal({});
+        $("#modal-video-home").on("hidden.bs.modal", function (e) {
+            var video = fncGetVideoHome();
+            video.pause();
+            video.currentTime = 0;
+        });
+
+        $("#modal-video-home").on("shown.bs.modal", function (e) {
+            var video = fncGetVideoHome();
+            video.currentTime = 0;
+            video.play();
+        });
     });
   </script>
   {% block script %}{% endblock %}
